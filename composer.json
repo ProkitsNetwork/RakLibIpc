@@ -17,5 +17,11 @@
 		"psr-4": {
 			"raklib\\server\\ipc\\": "src/"
 		}
-	}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url":  "git@github.com:ProkitsNetwork/RakLib.git"
+		}
+	]
 }
