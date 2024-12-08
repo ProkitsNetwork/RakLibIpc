@@ -76,6 +76,9 @@ final class UserToRakLibThreadMessageReceiver implements ServerEventSource{
 			}elseif($id === ITCProtocol::PACKET_SET_PACKETS_PER_TICK_LIMIT){
 				$limit = Binary::readLong(substr($packet, $offset, 8));
 				$server->setPacketsPerTickLimit($limit);
+			}elseif($id === ITCProtocol::PACKET_SET_UPLOAD_PACKETS_PER_TICK_LIMIT){
+				$limit = Binary::readLong(substr($packet, $offset, 8));
+				$server->setUploadPacketsPerTickLimit($limit);
 			}elseif($id === ITCProtocol::PACKET_BLOCK_ADDRESS){
 				$len = ord($packet[$offset++]);
 				$address = substr($packet, $offset, $len);

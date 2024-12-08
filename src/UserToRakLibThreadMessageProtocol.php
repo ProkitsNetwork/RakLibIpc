@@ -100,4 +100,10 @@ final class UserToRakLibThreadMessageProtocol{
 	 * int64 (limit)
 	 */
 	public const PACKET_SET_PACKETS_PER_TICK_LIMIT = 0x11;
+
+	/*
+	 * PACKETS_UPLOAD_PER_TICK_LIMIT payload:
+	 * int64 (limit)
+	 */
+	public const PACKET_SET_UPLOAD_PACKETS_PER_TICK_LIMIT = 0x12;
 }
